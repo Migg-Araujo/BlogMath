@@ -1,3 +1,16 @@
+var checkbox = document.getElementById('theme-checkbox');
+
+checkbox.addEventListener('change', function() {          
+    localStorage.setItem('checkboxState', checkbox.checked);
+});
+
+var savedCheckboxState = localStorage.getItem('checkboxState');
+
+if (savedCheckboxState !== null) {
+    checkbox.checked = savedCheckboxState === 'true';
+    changeTheme();
+}
+
 function changeTheme(){
     var root = document.documentElement;
     var checkBox = document.getElementById('theme-checkbox');
