@@ -198,3 +198,52 @@ nav{
   #theme-checkbox + label span:last-of-type {
     color: #cecece;
   }
+
+  @media screen and (max-width: 1439px) {
+  .nav-menu{
+      margin-left: 10px;
+  }
+  
+  .nav-user{
+    margin-right: 10px;
+  }
+  
+.nav-search{
+      width: 300px;
+      border-radius: 10px;
+  }
+  
+  .nav-search form{
+      width: 300px;    
+  }
+  
+  .nav-search button{
+      margin-left: 10px;
+  }
+  
+  .nav-redirect{
+    width: 30vw;
+}
+
+.nav-redirect a{
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 767px) {
+.nav-redirect{
+  display: none;
+}
+
+.nav-menu{
+    margin-left: 5px;
+}
+
+.nav-user{
+  margin-right: 5px;
+}
+
+.nav-search{
+  display: none;
+}
+}
