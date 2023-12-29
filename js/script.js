@@ -17,6 +17,7 @@ function changeTheme(){
 
     if(checkBox.checked){
         root.style.setProperty('--color-background', '#1E1E1E');
+        root.style.setProperty('--color-background2', '#242424');
         root.style.setProperty('--color-nav', '#202020');
         root.style.setProperty('--color-search', '#2D2D2D');
         root.style.setProperty('--color-a', 'white');
@@ -29,6 +30,7 @@ function changeTheme(){
         root.style.setProperty('--purple-input', "#342666");
     }else{
         root.style.setProperty('--color-background', 'white');
+        root.style.setProperty('--color-background2', '#E7E7E7');
         root.style.setProperty('--color-nav', '#F3F3F3');
         root.style.setProperty('--color-search', '#D9D9D9');
         root.style.setProperty('--color-a', '#B4B4B4');

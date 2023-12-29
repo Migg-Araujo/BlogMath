@@ -1,5 +1,6 @@
 :root{
     --color-background: white;
+    --color-background2: #E3E3E3;
     --color-nav: #F3F3F3;
     --color-search: #D9D9D9;
     --color-a: #B4B4B4;
@@ -27,6 +28,10 @@ body{
     width: 100dvw;
     font-weight: 300;
     overflow-x: hidden;
+}
+
+header{
+  position: fixed;
 }
 
 nav{
@@ -210,7 +215,112 @@ nav{
     color: #cecece;
   }
 
-  @media screen and (max-width: 1439px) {
+footer{
+    width: 100dvw;
+    height: 70px;
+    background: var(--color-nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+main{
+    flex: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-moz-scrollbar {
+  width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 8px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+section{
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section:nth-child(even){
+  background-color: var(--color-background2);
+}
+
+.home h3{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.home h1, .about h1{
+  font-size: 4rem;
+  text-align: center;
+}
+
+.home p{
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about p{
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.about{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about div{
+  height: 60dvh;
+  width: 40dvw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.about-div{
+  align-items: flex-start;
+}
+
+.img-div{
+  align-items: center;
+}
+
+.about img{
+  height: 40dvw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1439px) {
   .nav-icon{
       margin-left: 10px;
   }
@@ -262,49 +372,28 @@ nav{
 .nav-search{
   display: none;
 }
-
-
+.about{
+  flex-direction: column;
+  align-items: center;
 }
 
-footer{
-    width: 100dvw;
-    height: 70px;
-    background: var(--color-nav);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about div{
+  width: 90dvw;
+  align-items: center;
 }
 
-footer p{
-    font-size: 1rem;
+.about h1{
+  font-size: 2rem;
 }
 
-main{
-    flex: 1;
+.about p{
+  font-size: 1rem;
+  text-align: center;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+.about img{
 
-::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 8px;
+  height: 60dvw;
+  aspect-ratio: 1/1;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
-}
-
-::-moz-scrollbar {
-  width: 8px;
-}
-
-::-moz-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 8px;
-}
-
-::-moz-scrollbar-thumb:hover {
-  background-color: #555;
 }
