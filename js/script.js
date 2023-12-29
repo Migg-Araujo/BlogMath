@@ -24,6 +24,7 @@ function changeTheme(){
         root.style.setProperty('--color-text', 'white');
         root.style.setProperty('--menu', "url('../src/menu-black.svg')");
         root.style.setProperty('--user', "url('../src/user-black.svg')");
+        root.style.setProperty('--icon', "url('../src/icon-black.svg')");
     }else{
         root.style.setProperty('--color-background', 'white');
         root.style.setProperty('--color-nav', '#F3F3F3');
@@ -33,5 +34,6 @@ function changeTheme(){
         root.style.setProperty('--color-text', 'black');
         root.style.setProperty('--menu', "url('../src/menu-white.svg')");
         root.style.setProperty('--user', "url('../src/user-white.svg')");
+        root.style.setProperty('--icon', "url('../src/icon-white.svg')");
     }
 }
