@@ -25,6 +25,8 @@ function changeTheme(){
         root.style.setProperty('--menu', "url('../src/menu-black.svg')");
         root.style.setProperty('--user', "url('../src/user-black.svg')");
         root.style.setProperty('--icon', "url('../src/icon-black.svg')");
+        root.style.setProperty('--purple-background', "#4A3692");
+        root.style.setProperty('--purple-input', "#342666");
     }else{
         root.style.setProperty('--color-background', 'white');
         root.style.setProperty('--color-nav', '#F3F3F3');
@@ -35,5 +37,7 @@ function changeTheme(){
         root.style.setProperty('--menu', "url('../src/menu-white.svg')");
         root.style.setProperty('--user', "url('../src/user-white.svg')");
         root.style.setProperty('--icon', "url('../src/icon-white.svg')");
+        root.style.setProperty('--purple-background', "#543BAF");
+        root.style.setProperty('--purple-input', "#7662BF");
     }
 }

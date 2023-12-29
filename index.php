@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="icon" href="<?php echo INCLUDE_PATH; ?>src/icon.svg" type="image/x-icon">
 </head>
 <body>

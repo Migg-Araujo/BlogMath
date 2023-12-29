@@ -52,6 +52,6 @@
             </label>
           </div>
           
-          <div class="nav-user"><button></button></div>
+          <div class="nav-user"><button onclick="<?php echo "window.location.href = '".INCLUDE_PATH."login'";?>"></button></div>
     </nav>
 </header>

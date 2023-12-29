@@ -8,12 +8,14 @@
     --menu: url('../src/menu-white.svg');
     --user: url('../src/user-white.svg');
     --icon: url('../src/icon-white.svg');
+    --purple-background: #543BAF;
+    --purple-input: #7662BF;
 }
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
 }
 
 body{
@@ -21,13 +23,15 @@ body{
     color: var(--color-text);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh;
+    width: 100dvw;
+    font-weight: 300;
     overflow-x: hidden;
 }
 
 nav{
     height: 70px;
-    width: 100vw;
+    width: 100dvw;
     background: var(--color-nav);
     display: flex;
     align-items: center;
@@ -102,6 +106,7 @@ nav{
     margin-left: 15px;
     font-size: 20px;
     color: var(--color-text);
+    font-weight: 300;
 }
 
 .nav-search input:focus{
@@ -116,6 +121,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 500;
 }
 
 .nav-redirect a{
@@ -261,7 +267,7 @@ nav{
 }
 
 footer{
-    width: 100vw;
+    width: 100dvw;
     height: 70px;
     background: var(--color-nav);
     display: flex;
@@ -271,7 +277,6 @@ footer{
 
 footer p{
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
