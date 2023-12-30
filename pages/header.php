@@ -14,7 +14,7 @@
             <a href="<?php echo INCLUDE_PATH;?>#home">Home</a>
             <a href="<?php echo INCLUDE_PATH; ?>#about">About</a>
             <a href="<?php echo INCLUDE_PATH; ?>blog">Blog</a>
-            <a href="<?php echo INCLUDE_PATH; ?>contacts">Contacts</a>
+            <a href="<?php echo INCLUDE_PATH; ?>contact">Contact</a>
         </div>
 
         <div class="theme-switch">
