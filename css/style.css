@@ -10,6 +10,7 @@
   --user: url('../src/user-white.svg');
   --icon: url('../src/icon-white.svg');
   --views: url('../src/views-white.svg');
+  --close: url('../src/close-white.svg');
   --purple-background: #543BAF;
   --purple-input: #7662BF;
 }
@@ -345,14 +346,14 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid transparent;
+  border: 2px solid var(--color-text);
+  overflow: hidden;
 }
 
 .post img {
   width: 400px;
   aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius: 30px;
 }
 
 .post h3 {
@@ -420,7 +421,25 @@ section:nth-child(even) {
 
 .post:hover {
   scale: 1.1;
-  border: 2px solid var(--color-text);
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  margin: 30px;
+  background-image: var(--close);
+  background-size: cover;
+  position: absolute;
+}
+
+.close:hover {
+  scale: 1.2;
+}
+
+.msg-alert {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 35px;
 }
 
 @media screen and (max-width: 1439px) {
