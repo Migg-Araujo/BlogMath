@@ -4,6 +4,10 @@
         $url = '404';
     }
     require_once 'config/config.php';
+
+    if(!isset($_SESSION)){
+        session_start();
+    }
 ?>
 
 <!DOCTYPE html>

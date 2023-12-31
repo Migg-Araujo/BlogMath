@@ -14,7 +14,7 @@
             include __DIR__.'/../config/sessionStart.php';
 
             $_SESSION['user'] = $user['ID_USER'];
-            $_SESSION['name'] = $usuario['NAME'];
+            $_SESSION['name'] = $user['USERNAME'];
 
             header('Location: user');
         }else{
