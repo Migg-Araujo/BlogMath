@@ -40,7 +40,7 @@
             <div class="post">
                 <img src="<?php echo INCLUDE_PATH; ?>/src/photo.jpg"/>
                 <h3>Title Post</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>Lorem ipshttp://localhost/BlogMath/#homeum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 <div class="stats-area">
                     <div class="categories">
                         <button>Category</button>
