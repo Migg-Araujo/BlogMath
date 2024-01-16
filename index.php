@@ -1,5 +1,5 @@
 <?php
-    $url = ucfirst((isset($_GET['url'])) ? $_GET['url'] : 'home');
+    $url = (isset($_GET['url'])) ? $_GET['url'] : 'home';
     if(!file_exists('pages/'.$url.'.php')) {
         $url = '404';
     }
@@ -15,7 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Blog | <?php echo"$url"; ?></title>
+    <title>Math Blog | <?php echo ucfirst($url); ?></title>
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

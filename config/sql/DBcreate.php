@@ -40,8 +40,8 @@
                 TITLE_SEARCH VARCHAR(70),
                 LIKES INT,
                 VIEWS INT,
-                DESC VARCHAR(255),
-                TEXT_POST VARCHAR(2000),
+                TEXT_DESC VARCHAR(2000),
+                TEXT_POST VARCHAR(255),
                 IMG VARCHAR(255)
             )';
     $sql_query = $conn->query($sql);
