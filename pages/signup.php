@@ -6,11 +6,11 @@
         $password = password_hash(strtolower($conn->real_escape_string($_POST['password'])), PASSWORD_DEFAULT);
         $username = $conn->real_escape_string($_POST['username']);
 
-        $sql = "SELECT * FROM USER_TABLE WHERE EMAIL LIKE '$email'";
+        $sql = "SELECT * FROM USER_TABLE WHERE EMAIL LIKE '$email' OR LOWER(USERNAME) LIKE LOWER('$username')";
         $sql_query = $conn->query($sql);
 
         if($sql_query->num_rows > 0){
-            echo"<p class='msg-alert'>Email already Registered</p>";
+            echo"<p class='msg-alert'>User or Email already Registered</p>";
         }else{
             $sql = "INSERT INTO USER_TABLE (EMAIL, PASSWORD, USERNAME) VALUES ('$email', '$password', '$username')";
 

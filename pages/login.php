@@ -1,11 +1,11 @@
 <?php
     include __DIR__.'/../config/sql/DBcreate.php';
 
-    if(isset($_POST['email'])){
-        $email = strtolower($conn->real_escape_string($_POST['email']));
+    if(isset($_POST['userEmail'])){
+        $userEmail = strtolower($conn->real_escape_string($_POST['userEmail']));
         $password = strtolower($conn->real_escape_string($_POST['password']));
 
-        $sql = "SELECT * FROM USER_TABLE WHERE EMAIL LIKE '$email' LIMIT 1";
+        $sql = "SELECT * FROM USER_TABLE WHERE EMAIL LIKE '$userEmail' or LOWER(USERNAME) LIKE '$userEmail' LIMIT 1";
         $sql_query = $conn->query($sql);
 
         $user = $sql_query->fetch_assoc();
@@ -31,7 +31,7 @@
         <div class="sign-in-area">
                 <h1>Sign In</h1>
                 <form action="?" method="POST">
-                    <input type="text" placeholder="Email" autocomplete="off" required name='email'>
+                    <input type="text" placeholder="User or Email" autocomplete="off" required name='userEmail'>
                     <input type="password" placeholder="Password" autocomplete="off" required name='password'>
                     <a href="">Forget Your Password?</a>
                     <input type="submit" value="SIGN IN">

@@ -9,7 +9,7 @@
     <section id='about' class="about">
         <div class="about-div">
             <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Hello, my name is <strong>Miguel</strong>, I'm a <strong>Programmer</strong> and passionate about <strong>Mathematics</strong>, I created this website with the aim of improving my programming skills and making a blog about what I love most, <strong>Mathematics</strong>.</p>
         </div>
 
         <div class="img-div">
