@@ -1,4 +1,8 @@
 <?php
+    if(isset($_SESSION['user'])){
+        header('Location: user');
+    }
+    
     include __DIR__.'/../config/sql/DBcreate.php';
 
     if(isset($_POST['userEmail'])){

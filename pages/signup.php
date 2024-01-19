@@ -1,4 +1,8 @@
 <?php
+    if(isset($_SESSION['user'])){
+        header('Location: user');
+    }
+    
     include __DIR__.'/../config/sql/DBcreate.php';
 
     if(isset($_POST['email'])){
@@ -15,7 +19,17 @@
             $sql = "INSERT INTO USER_TABLE (EMAIL, PASSWORD, USERNAME) VALUES ('$email', '$password', '$username')";
 
             if ($conn->query($sql) === TRUE) {
-                header("Location: login"); 
+                $sql = "SELECT * FROM USER_TABLE WHERE EMAIL LIKE '$email'";
+                $sql_query = $conn->query($sql);
+
+                $user = $sql_query->fetch_assoc();
+
+                include __DIR__.'/../config/sessionStart.php';
+
+                $_SESSION['user'] = $user['ID_USER'];
+                $_SESSION['name'] = $user['USERNAME'];
+
+                header("Location: profile"); 
             }
         }
     }

@@ -442,6 +442,26 @@ section:nth-child(even) {
   top: 35px;
 }
 
+.menu-user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logout{
+  background-color: transparent;
+  border-radius: 15px;
+  color: var(--color-a);
+  padding: 5px;
+  margin-right: 10px;
+  border: none;
+}
+
+.logout:hover{
+  background-color: var(--color-search);
+  color: var(--color-a-hover);
+}
+
 @media screen and (max-width: 1439px) {
   .nav-icon {
     margin-left: 10px;

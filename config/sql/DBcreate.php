@@ -5,9 +5,9 @@
     $sql_query = $conn->query($sql);
 
     if ($sql_query === TRUE) {
-        echo "<script>console.log('Banco de dados criado com sucesso.')</script>";
+        echo "<script>console.log('Database Created.')</script>";
     } else {
-        echo "<script>console.log('Erro ao criar o banco de dados: ".')</script>';
+        echo "<script>console.log('Error in Create Database.')</script>";
     }
 
     $conn->select_db('MATHBLOG');
@@ -21,7 +21,9 @@
     $sql_query = $conn->query($sql);
 
     if ($sql_query === TRUE) {
-
+        echo "<script>console.log('Table User Created.')</script>";
+    } else {
+        echo "<script>console.log('Error in Create Table User.')</script>";
     }
     
     $sql = 'CREATE TABLE IF NOT EXISTS CATEGORY(
@@ -31,7 +33,9 @@
     $sql_query = $conn->query($sql);
 
     if ($sql_query === TRUE) {
-        
+        echo "<script>console.log('Table Category Created.')</script>";
+    } else {
+        echo "<script>console.log('Error in Create Table Category.')</script>";
     }
 
     $sql = 'CREATE TABLE IF NOT EXISTS POST(
@@ -47,7 +51,9 @@
     $sql_query = $conn->query($sql);
 
     if ($sql_query === TRUE) {
-        
+        echo "<script>console.log('Table Post Created.')</script>";
+    } else {
+        echo "<script>console.log('Error in Create Table Post.')</script>";
     }
 
     $sql = 'CREATE TABLE IF NOT EXISTS POSTCATEGORY(
@@ -59,6 +65,8 @@
     $sql_query = $conn->query($sql);
 
     if ($sql_query === TRUE) {
-        
+        echo "<script>console.log('Table PostCategory Created.')</script>";
+    } else {
+        echo "<script>console.log('Error in Create Table PostCategory.')</script>";
     }
 ?>

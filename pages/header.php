@@ -49,7 +49,14 @@
               </span>
             </label>
           </div>
-          
-          <div class="nav-user"><button onclick="<?php echo "window.location.href = '".INCLUDE_PATH."login'";?>"></button></div>
+          <div class='menu-user'>
+            <?php
+              $isUser = isset($_SESSION['user'])?'user':'login';
+              if($isUser == "user"){
+                echo "<button class='logout' onclick='window.location.href = ".'"'.INCLUDE_PATH.'logout"'."'".">sign out</button>";
+              }
+            ?>
+            <div class="nav-user"><button onclick="<?php echo "window.location.href = '".INCLUDE_PATH.$isUser."'";?>"></button></div>
+            </div>
     </nav>
 </header>

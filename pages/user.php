@@ -1,4 +1,8 @@
-<?php include 'header.php';?>
+<?php include 'header.php';
+if(!isset($_SESSION['user'])){
+    header('Location: login');
+}
+?>
 <script>
     var titleElement = document.querySelector('title');
     titleElement.innerText = "Math Blog | <?php echo $_SESSION['name']; ?>";
