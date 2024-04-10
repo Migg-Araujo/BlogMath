@@ -1,7 +1,14 @@
 <?php include 'header.php';
 if(!isset($_SESSION['user'])){
-    header('Location: login');
+    header('Location: login');    
 }
+
+include __DIR__.'/../config/sql/DBcreate.php';
+$sql = "SELECT * FROM USER_TABLE WHERE ID_USER LIKE  1";
+    $sql_query = $conn->query($sql);
+
+    $user = $sql_query->fetch_assoc();
+   
 ?>
 <script>
     var titleElement = document.querySelector('title');
@@ -13,8 +20,8 @@ if(!isset($_SESSION['user'])){
         <h1>Your Profile</h1>
         <img src="<?php echo INCLUDE_PATH; ?>/src/user-white.svg"/>
         <p>Name: Lorem Ipsum</p>
-        <p>Username: Lorem</p>
-        <p>Email: Lorem Ipsum@gmail.com</p>
+        <p>Username: <?php echo $user['USERNAME'];?></p>
+        <p>Email: <?php echo $user['EMAIL'];?></p>
 
         <button onclick="window.location.href='<?php echo INCLUDE_PATH;?>profile'">EDIT</button>
     </div>
