@@ -30,6 +30,7 @@ function changeTheme(){
         root.style.setProperty('--close', "url('../src/close-black.svg')");
         root.style.setProperty('--purple-background', "#4A3692");
         root.style.setProperty('--purple-input', "#342666");
+        root.style.setProperty('--color-shadow', "#2F2F2F");
     }else{
         root.style.setProperty('--color-background', 'white');
         root.style.setProperty('--color-background2', '#E7E7E7');
@@ -45,5 +46,6 @@ function changeTheme(){
         root.style.setProperty('--close', "url('../src/close-white.svg')");
         root.style.setProperty('--purple-background', "#543BAF");
         root.style.setProperty('--purple-input', "#7662BF");
+        root.style.setProperty('--color-shadow', "#4343437f");
     }
 }
