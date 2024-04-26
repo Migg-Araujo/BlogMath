@@ -1,4 +1,4 @@
-<header>
+<header onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
     <nav>
         <div class="nav-menu"><button></button></div>
         <div class="nav-icon"><button onclick="<?php echo "window.location.href = '".INCLUDE_PATH."'";?>"></button></div>
